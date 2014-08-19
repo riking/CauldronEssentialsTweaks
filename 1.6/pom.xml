@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>CauldronEssentialsTweaks-1.6</artifactId>
+    <packaging>jar</packaging>
+    <parent>
+        <groupId>org.riking.cauldronessentials</groupId>
+        <artifactId>CauldronEssentialsTweaks-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <properties>
+        <versions.bukkit>1.6.4-R2.0</versions.bukkit>
+        <versions.cauldron>1.6.4-1.965.21.164</versions.cauldron>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>${versions.bukkit}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.minecraftforge</groupId>
+            <artifactId>cauldron</artifactId>
+            <version>${versions.cauldron}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.riking.cauldronessentials</groupId>
+            <artifactId>CauldronEssentialsTweaks-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+</project>
