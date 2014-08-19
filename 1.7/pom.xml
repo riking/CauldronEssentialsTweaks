@@ -20,16 +20,38 @@
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>${versions.bukkit}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.minecraftforge</groupId>
             <artifactId>cauldron</artifactId>
             <version>${versions.cauldron}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.riking.cauldronessentials</groupId>
             <artifactId>CauldronEssentialsTweaks-common</artifactId>
             <version>${project.parent.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>CauldronEssentialsTweaks-1.7.jar</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

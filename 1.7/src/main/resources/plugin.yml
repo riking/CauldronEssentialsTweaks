@@ -1,0 +1,7 @@
+name: CauldronEssentialsTweaks
+version: ${project.parent.version}
+main: org.riking.cauldronessentialstweaks.CauldronEssentialsTweaks
+
+depend:
+ - Essentials
+# - Cauldron
