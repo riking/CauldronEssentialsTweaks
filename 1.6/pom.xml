@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>${versions.bukkit}</version>
+            <!-- <version>${versions.bukkit}</version> -->
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -28,10 +28,15 @@
             <version>${versions.cauldron}</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.ess3</groupId>
+            <artifactId>Essentials</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.riking.cauldronessentials</groupId>
             <artifactId>CauldronEssentialsTweaks-common</artifactId>
-            <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

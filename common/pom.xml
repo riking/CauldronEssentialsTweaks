@@ -14,5 +14,16 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>${versions.lowest.bukkit}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.ess3</groupId>
+            <artifactId>Essentials</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

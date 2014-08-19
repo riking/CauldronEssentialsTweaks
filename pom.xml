@@ -10,6 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <versions.lowest.bukkit>1.6.4-R2.0</versions.lowest.bukkit>
     </properties>
 
     <repositories>
@@ -21,6 +22,10 @@
             <id>forge-repo</id>
             <url>http://files.minecraftforge.net/maven/</url>
         </repository>
+        <repository>
+            <id>essentials-repo</id>
+            <url>http://repo.ess3.net:8071/content/groups/essentials/</url>
+        </repository>
     </repositories>
 
     <dependencyManagement>
@@ -28,9 +33,9 @@
             <dependency>
                 <groupId>org.bukkit</groupId>
                 <artifactId>bukkit</artifactId>
-                <version>${bukkit.version}</version>
+                <version>${versions.lowest.bukkit}</version>
                 <type>jar</type>
-                <scope>compile</scope>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
@@ -39,9 +44,16 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>net.ess3</groupId>
+                <artifactId>Essentials</artifactId>
+                <version>2.13.1</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.riking.cauldronessentials</groupId>
                 <artifactId>CauldronEssentialsTweaks-common</artifactId>
                 <version>${project.version}</version>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
