@@ -11,15 +11,15 @@
     </parent>
 
     <properties>
-        <versions.bukkit>1.6.4-R2.0</versions.bukkit>
-        <versions.cauldron>1.6.4-1.965.21.164</versions.cauldron>
+        <versions.bukkit>${versions.lowest.bukkit}</versions.bukkit>
+        <versions.cauldron>1.6.4-1.965.21.182</versions.cauldron>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <!-- <version>${versions.bukkit}</version> -->
+            <version>${versions.bukkit}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -42,7 +42,7 @@
     </dependencies>
 
     <build>
-        <finalName>CauldronEssentialsTweaks-1.7.jar</finalName>
+        <finalName>CauldronEssentialsTweaks-1.6</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

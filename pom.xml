@@ -11,6 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <versions.lowest.bukkit>1.6.4-R2.0</versions.lowest.bukkit>
+        <versions.lowest.cauldron>1.6.4-1.965.21.182</versions.lowest.cauldron>
     </properties>
 
     <repositories>
@@ -58,6 +59,19 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <modules>
         <module>1.6</module>
         <module>1.7</module>

@@ -1,6 +1,6 @@
 name: CauldronEssentialsTweaks
 version: ${project.parent.version}
-main: org.riking.cauldronessentialstweaks.CauldronEssentialsTweaks
+main: org.riking.cauldronessentialstweaks.CETPlugin
 
 depend:
  - Essentials
