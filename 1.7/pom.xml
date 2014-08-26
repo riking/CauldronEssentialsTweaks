@@ -12,7 +12,7 @@
 
     <properties>
         <versions.bukkit>1.7.10-R0.1-SNAPSHOT</versions.bukkit>
-        <versions.cauldron>1.7.10-1.1199.01.162</versions.cauldron>
+        <versions.cauldron>1.7.10-1.1207.01.187</versions.cauldron>
     </properties>
 
     <dependencies>

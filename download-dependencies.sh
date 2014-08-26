@@ -4,7 +4,7 @@ mkdir -p libs/
 
 download() {
 	version="$1"
-	wget -O "libs/cauldron-${version}.jar" "http://files.minecraftforge.net/maven/net/minecraftforge/cauldron/${version}/cauldron-${version}-server.jar"
+	wget -O "libs/cauldron-${version}.jar" "http://files.minecraftforge.net/maven/net/minecraftforge/cauldron/${version}/cauldron-${version}-server.jar" || exit 1
 }
 
 execute() {
